@@ -1,3 +1,5 @@
+// NWGKeyValueObserving.m
+
 @interface NSObject ( KeyValueObserving )
 @property ( nonatomic, strong, readonly ) NSMutableSet * nwgRegisteredKeyValueObservers ;
 -(void)removeKVOObservers ;
