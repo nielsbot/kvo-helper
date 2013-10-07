@@ -1,5 +1,5 @@
 // NWGKeyValueObserving.m
-// by nielsbot ( niels@nielsbot.com)
+// by nielsbot ( nielsbot@nielsbot.com)
 
 @interface NSObject ( KeyValueObserving )
 @property ( nonatomic, strong, readonly ) NSMutableSet * nwgRegisteredKeyValueObservers ;
