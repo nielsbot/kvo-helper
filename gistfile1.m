@@ -1,8 +1,9 @@
 // NWGKeyValueObserving.h
+// by nielsbot ( niels@nielsbot.com)
 
 typedef void (^KeyValueObserverBlock)( NSDictionary * change ) ;
 
-@interface KeyValueObserver : NSObject
+@interface NWGKeyValueObserver : NSObject
 
 @property ( nonatomic, readonly, copy )	NSString * 			keyPath ;
 @property ( nonatomic, readonly ) 	id 				target ;

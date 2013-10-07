@@ -1,11 +1,12 @@
 // NWGKeyValueObserving.m
+// by nielsbot ( niels@nielsbot.com)
 
 @interface NSObject ( KeyValueObserving )
 @property ( nonatomic, strong, readonly ) NSMutableSet * nwgRegisteredKeyValueObservers ;
 -(void)removeKVOObservers ;
 @end
 
-@interface KeyValueObserver ()
+@interface NWGKeyValueObserver ()
 @property ( nonatomic, copy ) NSString * keyPath ;
 @property ( nonatomic, copy ) KeyValueObserverBlock block ;
 @property ( nonatomic, weak ) id target ;
@@ -64,7 +65,7 @@ static void MakeObservableClass( id target )
 	}
 }
 
-@implementation KeyValueObserver
+@implementation NWGKeyValueObserver
 
 +(instancetype)observeKeyPath:(NSString*)keyPath ofObject:(id)target options:(NSKeyValueObservingOptions)options block:(KeyValueObserverBlock)block ;
 {
