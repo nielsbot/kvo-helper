@@ -1,5 +1,5 @@
 // NWGKeyValueObserving.h
-// by nielsbot ( nielsbot@nielsbot.com)
+// by nielsbot
 
 typedef void (^KeyValueObserverBlock)( NSDictionary * change ) ;
 
